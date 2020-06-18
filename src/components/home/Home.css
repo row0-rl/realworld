@@ -1,0 +1,27 @@
+.home {
+    margin: 20px
+}
+.titleFont {
+    font-size: 80px;
+    font-weight: bold;
+    text-align: left;
+    color: #344F64;
+}
+.cardDescriptionFont {
+    font-size: large;
+}
+.cardWrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card {
+    width: 30%;
+    margin: 20px 0;
+}
+.more {
+    font-size: large;
+    font-weight: bold;
+    text-align: right;
+    margin: 20px 0;
+}
