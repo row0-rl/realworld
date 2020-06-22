@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import { Menu } from 'antd';
 import { MailOutlined, AppstoreOutlined, SettingOutlined } from '@ant-design/icons';
 import News from "./News.js";
+import SocialMedia from "./SocialMedia.js";
+
+import "./Detail.css";
 
 const { SubMenu } = Menu;
 
@@ -30,7 +33,7 @@ class Detail extends Component {
     switchPage() {
         switch(this.state.current) {
             case 'news': return <News id={this.state.id}/>;
-            case 'socialMedia': return <div>Social Media</div>;
+            case 'socialMedia': return <SocialMedia />;
             case 'data': return <div>Data</div>;
         }
     }
@@ -39,7 +42,7 @@ class Detail extends Component {
         const that = this;
         return (
             <div>
-                <Menu onClick={this.handleClick} selectedKeys={[this.state.current]} mode="horizontal">
+                <Menu class="menu" onClick={this.handleClick} selectedKeys={[this.state.current]} mode="horizontal">
                     <Menu.Item key="news" icon={<MailOutlined />}>
                         News
                     </Menu.Item>

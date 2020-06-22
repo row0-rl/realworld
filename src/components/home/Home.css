@@ -1,5 +1,5 @@
 .home {
-    margin: 20px
+    margin: 0px 20px
 }
 .titleFont {
     font-size: 80px;
@@ -23,5 +23,5 @@
     font-size: large;
     font-weight: bold;
     text-align: right;
-    margin: 20px 0;
+    padding: 20px 0px
 }
